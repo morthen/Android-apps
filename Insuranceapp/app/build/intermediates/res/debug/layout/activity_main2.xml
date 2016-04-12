@@ -1,0 +1,92 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dropdown="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="8dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/Drop"
+        android:weightSum="1">
+
+        <com.testapp.nordicit.myapplication.DropDown
+            android:id="@+id/main_companies_dropDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:entries="@array/companies"
+            dropdown:arrowImage="@android:drawable/arrow_down_float"
+            dropdown:titleBackground="@drawable/dropdown_background"
+            dropdown:titleColor="#000000"
+            dropdown:titleText="@string/main_countries" />
+
+        <com.testapp.nordicit.myapplication.DropDown
+            android:id="@+id/main_numbers_dropDown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            dropdown:titleText="@string/main_cities" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+
+            <Button
+                android:id="@+id/main_show_values_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_show_values2"
+                android:onClick="OnClickCamera" />
+
+            <Button
+                android:id="@+id/main_show_values_button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:text="@string/main_show_values3"
+                android:layout_marginTop="-50dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+
+            <Button
+                android:id="@+id/main_show_values_button4"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/main_show_values5"
+                android:layout_marginBottom="-100dp" />
+
+            <Button
+                android:id="@+id/main_show_values_button5"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:text="@string/main_show_values4"
+                android:layout_gravity="left"
+                android:layout_marginTop="45dp" />
+
+            <Button
+                android:id="@+id/main_show_values_button"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="@string/main_show_values"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="200dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView><!-- From: file:/C:/Users/Asus/Desktop/MyApplication/app/src/main/res/layout/activity_main2.xml -->
